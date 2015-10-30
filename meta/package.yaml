@@ -1,0 +1,10 @@
+name: snappy-calculator
+vendor: Kyle Fazzari <kyle@canonical.com>
+architecture: [amd64, armhf]
+version: 2.0.182.1
+icon: meta/icon.png
+binaries:
+  - name: calculator
+    description: "Calculator packaged as a snap"
+    exec: qmlscene.wrapper qml/ubuntu-calculator-app.qml --
+    security-template: unconfined
